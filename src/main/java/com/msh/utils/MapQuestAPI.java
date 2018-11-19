@@ -22,8 +22,8 @@ public class MapQuestAPI {
     public static Double getDistanceFromSingleRoute(Coordinate from, Coordinate to) {
         double distance = 999999999;
         try {
-            //String path2="http://www.mapquestapi.com/directions/v2/route?key=ulEWJo1ohQA7bl5TilNwb0Nf1erDtqiJ&from=48.868265,2.297473&to=48.868265,2.297473";
-            String path = "http://www.mapquestapi.com/directions/v2/route?key=ulEWJo1ohQA7bl5TilNwb0Nf1erDtqiJ&from=";
+            //String path2="http://www.mapquestapi.com/directions/v2/route?key=&from=48.868265,2.297473&to=48.868265,2.297473";
+            String path = "http://www.mapquestapi.com/directions/v2/route?key&from=";
             String btw = "&to=";
             String full_path = path + from.getY() + "," + from.getX() + btw + to.getY() + "," + to.getX();
             URL url = new URL(full_path);
@@ -70,8 +70,8 @@ public class MapQuestAPI {
     public void fillMultipleRoutes(Coordinate from, Coordinate to) {
         double distance = 999999999;
         try {
-            //String path2="http://www.mapquestapi.com/directions/v2/route?key=ulEWJo1ohQA7bl5TilNwb0Nf1erDtqiJ&from=48.868265,2.297473&to=48.868265,2.297473";
-            String path = "http://www.mapquestapi.com/directions/v2/alternateroutes?key=ulEWJo1ohQA7bl5TilNwb0Nf1erDtqiJ&from=";
+            //String path2="http://www.mapquestapi.com/directions/v2/route?key=&from=48.868265,2.297473&to=48.868265,2.297473";
+            String path = "http://www.mapquestapi.com/directions/v2/alternateroutes?key=&from=";
             String btw = "&to=";
             String full_path = path + from.getY() + "," + from.getX() + btw + to.getY() + "," + to.getX() + "&maxRoutes=3";
             URL url = new URL(full_path);
