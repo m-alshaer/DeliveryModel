@@ -14,7 +14,7 @@ public class GoogleAPIServices {
 
     private static GeoApiContext getContext(){
         GeoApiContext context = new GeoApiContext.Builder()
-                .apiKey("AIzaSyAzpf8SGnEQzv-dKOU2BGs7dAis-li6wMg")
+                .apiKey("")
                 .build();
 
         return context;
